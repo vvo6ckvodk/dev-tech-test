@@ -38,7 +38,7 @@ Please make commits as you go (> 1 and < 100) and provide instructions to run th
 These are stretch goals if you have time (you can do them in any order):
 
 * "As a Developer, I want my code to be covered by tests, so I know if a change has broken something"
-* "As a Consumer of the API, when reading the car model information I would like to see an additional field containing a string of a few words that sound like the model of the cars I have added" (using [http://www.datamuse.com/api/]() as the source).
+* "As a Consumer of the API, when reading the car model information I would like to see an additional field containing a string of a few words that sound like the model of the cars I have added" (using [http://www.datamuse.com/api/](http://www.datamuse.com/api/) as the source).
 * "As a Consumer of the API, I would like to be able to update my existing cars"
 * "As a Consumer of the API, I would like any cars I add through the API to persist between application restarts (persistent storage)"
 * "As a Consumer of the API, I would like cars to be represented as two separate, hierarchically linked resources: 
