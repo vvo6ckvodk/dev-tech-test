@@ -20,6 +20,18 @@ export default class Cars {
         });
     }
 
+    delete(request, response) {
+        const car = this.cars[request.params.carId];
+
+        if (typeof car === 'undefined') {
+            return response.status(404).send();
+        }
+
+        delete this.cars[request.params.carId];
+
+        response.status(200).send();
+    }
+
     show(request, response) {
         const car = this.cars[request.params.carId];
 

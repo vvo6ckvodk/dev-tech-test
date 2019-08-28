@@ -8,5 +8,6 @@ export default function (app) {
         .post(controller.create.bind(controller));
 
     app.route('/cars/:carId')
-        .get(controller.show.bind(controller));
+        .get(controller.show.bind(controller))
+        .delete(controller.delete.bind(controller));
 }
