@@ -13,8 +13,8 @@ Available URLs, example payloads, and responses are shown in the table below. Re
 
 | URL | Method | Example Request | Example Response |
 | --- | --- | --- | --- |
-| http://localhost:8080/cars | POST | `{"year": "2016", "make": "VW", "model": "Golf"}`| `{"year": "2016", "make": "VW", "model": "Golf", "id":  "5d66c3563e79b7003681a2e7"}` |
-| http://localhost:8080/cars/5d66c3563e79b7003681a2e7 | GET | | `{"year": "2016", "make": "VW", "model": "Golf", "id": "5d66c3563e79b7003681a2e7"}` |
+| http://localhost:8080/cars | POST | `{"year": "2016", "make": "VW", "model": "Golf", "colour": "black"}`| `{"year": "2016", "make": "VW", "model": "Golf", "colour": "black", "id":  "5d66c3563e79b7003681a2e7"}` |
+| http://localhost:8080/cars/5d66c3563e79b7003681a2e7 | GET | | `{"year": "2016", "make": "VW", "model": "Golf", "colour": "black", "id": "5d66c3563e79b7003681a2e7"}` |
 | http://localhost:8080/cars/5d66c3563e79b7003681a2e7 | DELETE | | |
 
 # Cars API

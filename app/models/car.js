@@ -9,6 +9,10 @@ const schema = new mongoose.Schema({
         type: String,
         required: true
     },
+    colour: {
+        type: String,
+        required: true,
+    },
     year: {
         type: String,
         required: true,
