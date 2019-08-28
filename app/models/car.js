@@ -17,4 +17,12 @@ const schema = new mongoose.Schema({
     },
 });
 
+schema.set('toJSON', {
+    transform: (doc, data) => {
+        data.id = data._id.toString();
+
+        delete data._id;
+    },
+});
+
 export default mongoose.model('Car', schema);
