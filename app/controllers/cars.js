@@ -14,7 +14,7 @@ export default class Cars {
                 return response.send(error);
             }
 
-            this.cars[car.id] = car;
+            this.cars[car._id] = car;
 
             response.json(car);
         });
