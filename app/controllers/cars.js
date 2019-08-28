@@ -19,4 +19,14 @@ export default class Cars {
             response.json(car);
         });
     }
+
+    show(request, response) {
+        const car = this.cars[request.params.carId];
+
+        if (typeof car === 'undefined') {
+            return response.status(404).send();
+        }
+
+        response.json(car);
+    }
 }
