@@ -1,5 +1,22 @@
 # Web Dev Test
 
+## Running the application
+
+The application can be run via Docker.
+First, you will need to install the [Docker Engine](https://docs.docker.com/install/) if it isn't already installed.
+
+You can then do `docker-compose up` to run the application.
+
+The application will be available at `http://localhost:8080/`
+
+Available URLs, example payloads, and responses are shown in the table below. Requests should be made with a `Content-Type` header value of `application/json`
+
+| URL | Method | Example Request | Example Response |
+| --- | --- | --- | --- |
+| http://localhost:8080/cars | POST | `{"year": "2016", "make": "VW", "model": "Golf"}`| `{"year": "2016", "make": "VW", "model": "Golf", "id":  "5d66c3563e79b7003681a2e7"}` |
+| http://localhost:8080/cars/5d66c3563e79b7003681a2e7 | GET | | `{"year": "2016", "make": "VW", "model": "Golf", "id": "5d66c3563e79b7003681a2e7"}` |
+| http://localhost:8080/cars | DELETE | | |
+
 # Cars API
 
 Your first task will be to fork and clone this repo and follow the instructions 
